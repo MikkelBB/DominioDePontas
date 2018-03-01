@@ -51,7 +51,6 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -60,18 +59,22 @@ img {
 
 .redwine{
   background: linear-gradient(to right, $black, $white);
+  grid-column: 1/4;
 }
 
 .whitewine{
   background: linear-gradient(to right, $grey, $white);
+  grid-column: 1/4;
 }
 
 .rosewine{
   background: linear-gradient(to right, $grey, $red);
+  grid-column: 1/4;
 }
 
 .portwine{
   background: linear-gradient(to right, $black, $grey);
+  grid-column: 1/4;
 }
 
 
