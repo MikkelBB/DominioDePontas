@@ -58,7 +58,21 @@ img {
   grid-template-rows: auto;
 }
 
-]
+.redwine{
+  background: linear-gradient(to right, $black, $white);
+}
+
+.whitewine{
+  background: linear-gradient(to right, $grey, $white);
+}
+
+.rosewine{
+  background: linear-gradient(to right, $grey, $red);
+}
+
+.portwine{
+  background: linear-gradient(to right, $black, $grey);
+}
 
 
 @media screen and (min-width: 768px) {
