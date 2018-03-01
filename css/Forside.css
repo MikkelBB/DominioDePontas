@@ -26,4 +26,22 @@ img {
   max-width: 100%;
   height: auto; }
 
+@media screen and (min-width: 375px) {
+  .headerbox {
+    background-color: black;
+    display: flex; }
+
+  .mobilmenu {
+    color: white;
+    padding-left: 5%;
+    padding-top: 2%; }
+
+  .logomobil {
+    height: 80%;
+    width: 80%;
+    padding-left: -5%;
+    margin-top: -37%;
+    margin-bottom: -45%;
+    margin-left: -2%; } }
+
 /*# sourceMappingURL=Forside.css.map */
