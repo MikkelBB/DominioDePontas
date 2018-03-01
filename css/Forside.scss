@@ -39,7 +39,7 @@ img {
 @media screen and (min-width: 375px) {
   // Alt der ændres i tablet stående fra mobil
 
-  .headerbox{
+  .headerboxmobile{
    background-color: black;
    display: flex;
 
@@ -60,21 +60,31 @@ img {
 
   }
 
-
-
-
-
-
-
-
 }
-
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 }
-
+// Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 @media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  .headerboxmobile{
+    display: none;
+  }
+  
+  .headerboxweb{
+    background-color: black;
+
+  }
+
+
+
+
+
+
+
+
+
+
 }
 
 @media print {
