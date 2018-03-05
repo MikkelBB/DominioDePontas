@@ -33,18 +33,18 @@ img {
 
 .redwine {
   background: linear-gradient(to right, #000000, #ffffff);
-  grid-column: 1/4; }
+  grid-column: 1/5; }
 
 .whitewine {
   background: linear-gradient(to right, #5c5553, #ffffff);
-  grid-column: 1/4; }
+  grid-column: 1/5; }
 
 .rosewine {
   background: linear-gradient(to right, #5c5553, #b00030);
-  grid-column: 1/4; }
+  grid-column: 1/5; }
 
 .portwine {
   background: linear-gradient(to right, #000000, #5c5553);
-  grid-column: 1/4; }
+  grid-column: 1/5; }
 
 /*# sourceMappingURL=Vine.css.map */

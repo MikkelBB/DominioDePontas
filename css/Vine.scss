@@ -27,6 +27,7 @@ $white: #ffffff;
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
+
 }
 
 ul, ol {
@@ -59,22 +60,22 @@ img {
 
 .redwine{
   background: linear-gradient(to right, $black, $white);
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .whitewine{
   background: linear-gradient(to right, $grey, $white);
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .rosewine{
   background: linear-gradient(to right, $grey, $red);
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 .portwine{
   background: linear-gradient(to right, $black, $grey);
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 
 
