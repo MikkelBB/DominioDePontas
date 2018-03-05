@@ -6,8 +6,9 @@ body {
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0; }
+  font-family: bookmania, serif;
+  color: #ffffff;
+  margin: 0; }
 
 ul, ol {
   margin: 0;
@@ -51,19 +52,20 @@ img {
   grid-column: 1/5;
   grid-row: 4/5; }
 
-.redimg, .hvidimg, .roseimg, .portimg {
+.redimg {
+  grid-row: 1/2;
   grid-column: 3/5; }
 
-.redimg {
-  grid-row: 1/2; }
-
 .hvidimg {
-  grid-row: 2/3; }
+  grid-row: 2/3;
+  grid-column: 3/5; }
 
 .roseimg {
-  grid-row: 3/4; }
+  grid-row: 3/4;
+  grid-column: 3/5; }
 
 .portimg {
-  grid-row: 4/5; }
+  grid-row: 4/5;
+  grid-column: 3/5; }
 
 /*# sourceMappingURL=Vine.css.map */

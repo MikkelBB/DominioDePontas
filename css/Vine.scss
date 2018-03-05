@@ -25,8 +25,9 @@ $white: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  @include bookmania;
   margin: 0; // Ingen ydre margen fra overskrifter
-  padding: 0; // Ingen indre margen fra overskrifter
+
 
 }
 
@@ -82,24 +83,24 @@ img {
   grid-row: 4/5;
 }
 
-.redimg, .hvidimg, .roseimg, .portimg{
- grid-column: 3/5;
-}
-
 .redimg{
   grid-row: 1/2;
+  grid-column: 3/5;
 }
 
 .hvidimg{
   grid-row: 2/3;
+  grid-column: 3/5;
 }
 
 .roseimg{
   grid-row: 3/4;
+  grid-column: 3/5;
 }
 
 .portimg{
   grid-row: 4/5;
+  grid-column: 3/5;
 }
 
 @media screen and (min-width: 768px) {
