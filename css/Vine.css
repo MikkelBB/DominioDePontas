@@ -8,6 +8,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: bookmania, serif;
   color: #ffffff;
+  font-size: 150%;
   margin: 7%;
   padding: 0; }
 
@@ -20,7 +21,10 @@ li {
   margin: 0; }
 
 p {
-  margin: 0;
+  font-family: proxima-soft, sans-serif;
+  color: #ffffff;
+  margin: 7%;
+  grid-column: 1/2;
   padding: 0; }
 
 img {

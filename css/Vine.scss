@@ -17,6 +17,7 @@ $white: #ffffff;
 @mixin bookmania{
   font-family: bookmania, serif;
   color: $white;
+  font-size: 150%
 }
 
 @mixin proxima{
@@ -46,7 +47,9 @@ li {
 }
 
 p {
-  margin: 0; // Ingen ydre margen fra paragraffer
+  @include proxima;
+  margin: 7%; // Ingen ydre margen fra paragraffer
+  grid-column: 1/2;
   padding: 0; // Ingen indre margen fra paragraffer
 }
 
@@ -90,29 +93,21 @@ img {
 .redimg{
   @include billedopskrift;
   grid-row: 1/2;
-
-
 }
 
 .hvidimg{
   @include billedopskrift;
   grid-row: 2/3;
-
-
 }
 
 .roseimg{
   @include billedopskrift;
   grid-row: 3/4;
-
-
 }
 
 .portimg{
   @include billedopskrift;
   grid-row: 4/5;
-
-
 }
 
 .redimg:hover, .hvidimg:hover, .roseimg:hover, .portimg:hover{
@@ -131,6 +126,3 @@ img {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 }
 
-@media print {
-  // Alt der gælder for print specifikt
-}
