@@ -26,6 +26,11 @@ img {
   max-width: 100%;
   height: auto; }
 
+h1 {
+  font-family: bookmania, serif;
+  color: #ffffff;
+  font-size: 130%; }
+
 h2 {
   color: #ffffff; }
 
@@ -34,13 +39,25 @@ h2 {
     position: fixed;
     background-color: black;
     width: 250px;
-    height: 733px;
+    height: 100%;
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0; }
 
   .menuimg {
     margin-left: 36px;
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  .menubar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin-left: 38px; }
+
+  .footer {
+    background-color: #1d1d1d;
+    width: 250px;
+    height: 300px;
+    margin-top: 80px; } }
 
 /*# sourceMappingURL=Vores%20Historie.css.map */

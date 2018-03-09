@@ -39,7 +39,18 @@ $red: #b00030;
 $grey: #5c5553;
 $black: #000000;
 $white: #ffffff;
-
+@mixin bookmania{
+  font-family: bookmania, serif;
+  color: $white;
+  font-size: 130%
+}
+@mixin proxima{
+  font-family: proxima-soft, sans-serif;
+  color: $white;
+}
+h1{
+  @include bookmania;
+}
 h2{
   color: $white;
 }
@@ -53,22 +64,31 @@ h2{
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-.headerweb{
-  position: fixed;
-  background-color: black;
-  width: 250px;
-  height: 733px;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 0;
-}
+  .headerweb{
+    position: fixed;
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
   .menuimg{
     margin-left: 36px;
     margin-top: 25px;
   }
   .menubar{
-  margin-left: ;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin-left: 38px;
   }
+  .footer{
+    background-color: #1d1d1d;
+    width: 250px;
+    height: 300px;
+    margin-top: 80px;
+   }
 }
 
 @media print {
