@@ -62,13 +62,13 @@ img {
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-rows: 50px auto 50px 50px auto 50px 50px auto 50px 50px auto 50px;
 }
 
 .redwine{
   background: linear-gradient(to right, $black, $white);
   grid-column: 1/5;
-  grid-row: 1/3;
+  grid-row: 1/4;
 }
 
 .redhead{
@@ -78,19 +78,31 @@ img {
 .whitewine{
   background: linear-gradient(to right, $grey, $white);
   grid-column: 1/5;
-  grid-row: 3/5;
+  grid-row: 4/7;
+}
+
+.whitehead{
+  grid-row: 3/4;
 }
 
 .rosewine{
   background: linear-gradient(to right, $grey, $red);
   grid-column: 1/5;
-  grid-row: 5/7;
+  grid-row: 7/10;
+}
+
+.rosehead{
+  grid-row: 5/6;
 }
 
 .portwine{
   background: linear-gradient(to right, $black, $grey);
   grid-column: 1/5;
-  grid-row: 7/9;
+  grid-row: 10/13;
+}
+
+.porthead{
+  grid-row: 7/8;
 }
 
 .redimg{
@@ -100,17 +112,17 @@ img {
 
 .hvidimg{
   @include billedopskrift;
-  grid-row: 4/5;
+  grid-row: 5/6;
 }
 
 .roseimg{
   @include billedopskrift;
-  grid-row: 6/7;
+  grid-row: 8/9;
 }
 
 .portimg{
   @include billedopskrift;
-  grid-row: 8/9;
+  grid-row: 11/12;
 }
 
 .redimg:hover, .hvidimg:hover, .roseimg:hover, .portimg:hover{
