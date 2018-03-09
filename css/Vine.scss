@@ -126,7 +126,11 @@ p {
 }
 
 @media screen and (min-width: 375px) {
-  // Alt der ændres i tablet stående fra mobil
+
+  .headerweb{
+    display: none;
+  }
+
   .headerboxmobile{
     background-color: black;
     display: flex;
@@ -134,7 +138,6 @@ p {
     margin-left: 0;
     margin-right: 0;
     height: 150px;
-
   }
   .mobilmenu{
     color: white;
@@ -163,6 +166,10 @@ p {
 
   .headerboxmobile{
     display: none;
+  }
+
+  .redwine, .whitewine, .rosewine, .portwine{
+    grid-column: 2/5;
   }
 
   img {

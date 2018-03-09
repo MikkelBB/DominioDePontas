@@ -84,6 +84,9 @@ p {
   transform: scale(1.3); }
 
 @media screen and (min-width: 375px) {
+  .headerweb {
+    display: none; }
+
   .headerboxmobile {
     background-color: black;
     display: flex;
@@ -113,6 +116,9 @@ p {
 @media screen and (min-width: 1200px) {
   .headerboxmobile {
     display: none; }
+
+  .redwine, .whitewine, .rosewine, .portwine {
+    grid-column: 2/5; }
 
   img {
     display: block;
