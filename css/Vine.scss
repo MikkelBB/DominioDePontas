@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 1px; // Ingen kanter i siden af browser
+  margin: 0; // Ingen kanter i siden af browser44444
 }
 
 $red: #b00030;
@@ -17,6 +17,7 @@ $white: #ffffff;
 @mixin bookmania{
   font-family: bookmania, serif;
   color: $white;
+  font-size: 150%
 }
 
 @mixin proxima{
@@ -24,9 +25,14 @@ $white: #ffffff;
   color: $white;
 }
 
+@mixin billedopskrift{
+  grid-column: 4/5;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  margin: 0; // Ingen ydre margen fra overskrifter
-  padding: 0; // Ingen indre margen fra overskrifter
+  @include bookmania;
+  margin: 7%; // Ingen ydre margen fra overskrifter
+  padding: 0;
 }
 
 ul, ol {
@@ -40,7 +46,9 @@ li {
 }
 
 p {
-  margin: 0; // Ingen ydre margen fra paragraffer
+  @include proxima;
+  margin: 7%; // Ingen ydre margen fra paragraffer
+  grid-column: 1/2;
   padding: 0; // Ingen indre margen fra paragraffer
 }
 
@@ -54,43 +62,105 @@ img {
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 50px auto 50px 50px auto 50px 50px auto 50px 50px auto 50px;
 }
 
 .redwine{
   background: linear-gradient(to right, $black, $white);
-  grid-column: 1/4;
+  grid-column: 1/5;
+  grid-row: 1/4;
+}
 
+.redhead{
+  grid-row: 1/2;
 }
 
 .whitewine{
   background: linear-gradient(to right, $grey, $white);
-  grid-column: 1/4;
+  grid-column: 1/5;
+  grid-row: 4/7;
+}
+
+.whitehead{
+  grid-row: 3/4;
 }
 
 .rosewine{
   background: linear-gradient(to right, $grey, $red);
-  grid-column: 1/4;
+  grid-column: 1/5;
+  grid-row: 7/10;
+}
+
+.rosehead{
+  grid-row: 5/6;
 }
 
 .portwine{
   background: linear-gradient(to right, $black, $grey);
-  grid-column: 1/4;
+  grid-column: 1/5;
+  grid-row: 10/13;
 }
 
+.porthead{
+  grid-row: 7/8;
+}
 
-@media screen and (min-width: 768px) {
+.redimg{
+  @include billedopskrift;
+  grid-row: 2/3;
+}
+
+.hvidimg{
+  @include billedopskrift;
+  grid-row: 5/6;
+}
+
+.roseimg{
+  @include billedopskrift;
+  grid-row: 8/9;
+}
+
+.portimg{
+  @include billedopskrift;
+  grid-row: 11/12;
+}
+
+.redimg:hover, .hvidimg:hover, .roseimg:hover, .portimg:hover{
+  transform: scale(1.3);
+}
+
+@media screen and (min-width: 375px) {
   // Alt der ændres i tablet stående fra mobil
-}
+  .headerboxmobile{
+    background-color: black;
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 225px;
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
+  }
+  .mobilmenu{
+    color: white;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+
+  .logomobil{
+    height: 80%;
+    width: 80%;
+    padding-left: -5%;
+    margin-top: -37%;
+    margin-bottom: -45%;
+    margin-left: -2%;
+
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  .headerboxmobile{
+    display: none;
+  }
 }
 
-@media print {
-  // Alt der gælder for print specifikt
-}
