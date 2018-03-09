@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 0; // Ingen kanter i siden af browser44444
+  margin: 1px; // Ingen kanter i siden af browser
 }
 
 $red: #b00030;
@@ -17,7 +17,6 @@ $white: #ffffff;
 @mixin bookmania{
   font-family: bookmania, serif;
   color: $white;
-  font-size: 150%
 }
 
 @mixin proxima{
@@ -25,15 +24,9 @@ $white: #ffffff;
   color: $white;
 }
 
-@mixin billedopskrift{
-  grid-column: 3/5;
-}
-
 h1, h2, h3, h4, h5, h6 {
-  @include bookmania;
-  margin: 7%; // Ingen ydre margen fra overskrifter
-  padding: 0;
-
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
 }
 
 ul, ol {
@@ -47,9 +40,7 @@ li {
 }
 
 p {
-  @include proxima;
-  margin: 7%; // Ingen ydre margen fra paragraffer
-  grid-column: 1/2;
+  margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
 }
 
@@ -63,56 +54,30 @@ img {
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto;
 }
 
 .redwine{
   background: linear-gradient(to right, $black, $white);
-  grid-column: 1/5;
-  grid-row: 1/2;
+  grid-column: 1/4;
+
 }
 
 .whitewine{
   background: linear-gradient(to right, $grey, $white);
-  grid-column: 1/5;
-  grid-row: 2/3;
+  grid-column: 1/4;
 }
 
 .rosewine{
   background: linear-gradient(to right, $grey, $red);
-  grid-column: 1/5;
-  grid-row: 3/4;
+  grid-column: 1/4;
 }
 
 .portwine{
   background: linear-gradient(to right, $black, $grey);
-  grid-column: 1/5;
-  grid-row: 4/5;
+  grid-column: 1/4;
 }
 
-.redimg{
-  @include billedopskrift;
-  grid-row: 1/2;
-}
-
-.hvidimg{
-  @include billedopskrift;
-  grid-row: 2/3;
-}
-
-.roseimg{
-  @include billedopskrift;
-  grid-row: 3/4;
-}
-
-.portimg{
-  @include billedopskrift;
-  grid-row: 4/5;
-}
-
-.redimg:hover, .hvidimg:hover, .roseimg:hover, .portimg:hover{
-  transform: scale(1.3);
-}
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
@@ -126,3 +91,6 @@ img {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 }
 
+@media print {
+  // Alt der gælder for print specifikt
+}
