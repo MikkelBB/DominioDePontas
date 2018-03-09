@@ -43,7 +43,10 @@ img {
     padding-left: -5%;
     margin-top: -37%;
     margin-bottom: -45%;
-    margin-left: -2%; } }
+    margin-left: -2%; }
+
+  .prev, .next, .text {
+    font-size: 11px; } }
 @media screen and (min-width: 1200px) {
   .headerboxmobile {
     display: none; }
