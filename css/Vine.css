@@ -58,19 +58,19 @@ img {
   grid-row: 4/5; }
 
 .redimg {
-  grid-column: 3/5;
+  grid-column: 4/5;
   grid-row: 1/2; }
 
 .hvidimg {
-  grid-column: 3/5;
+  grid-column: 4/5;
   grid-row: 2/3; }
 
 .roseimg {
-  grid-column: 3/5;
+  grid-column: 4/5;
   grid-row: 3/4; }
 
 .portimg {
-  grid-column: 3/5;
+  grid-column: 4/5;
   grid-row: 4/5; }
 
 .redimg:hover, .hvidimg:hover, .roseimg:hover, .portimg:hover {
