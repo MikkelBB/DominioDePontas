@@ -39,9 +39,23 @@ $red: #b00030;
 $grey: #5c5553;
 $black: #000000;
 $white: #ffffff;
-
-h2{
+@mixin bookmania{
+  font-family: bookmania, serif;
   color: $white;
+  font-size: 130%
+}
+@mixin proxima{
+  font-family: proxima-soft, sans-serif;
+  color: $white;
+}
+h1{
+  @include bookmania;
+}
+h2{
+  font-family: proxima-soft, sans-serif;
+  font-size: 15px;
+  color: white;
+
 }
 @media screen and (min-width: 375px) {
   // Alt der ændres i tablet stående fra mobil
@@ -53,24 +67,34 @@ h2{
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-.headerweb{
-  position: fixed;
-  background-color: black;
-  width: 250px;
-  height: 733px;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 0;
-}
+  .headerweb{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 250px;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
   .menuimg{
     margin-left: 36px;
     margin-top: 25px;
   }
   .menubar{
-  margin-left: ;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin-left: 38px;
   }
-}
+  .footer{
+    background-color: #121212;
+    width: 250px;
+    height: 300px;
+    margin-top: 80px;
+   }
 
+
+}
 @media print {
   // Alt der gælder for print specifikt
 }
