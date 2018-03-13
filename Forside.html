@@ -65,57 +65,59 @@
 
 <!--WEB MENU-->
 
-<div class="headerweb">
+<header class="headerweb">
     <img class="menuimg" src="images/hvid logo web.png" height="300" width="169"/>
-    <div class="menubar">
-        <h1>Forside</h1>
-        <h1>Vores Historie</h1>
-        <h1>Vingården</h1>
-        <h1>Vine</h1>
-    </div>
+    <nav class="menubar">
+        <a href="#"><h1>Forside</h1></a>
+        <a href="#"><h1>Vores Historie</h1></a>
+        <a href="#"><h1>Vingården</h1></a>
+        <a href="#"><h1>Vine</h1></a>
+    </nav>
     <footer class="footer">
         <h2 class="footertekst1">Følg os på sociale medier</h2>
-        <img class="footerface" src="images/facebook logo fixed.png" height="30" width="30"/>
+        <img class="footerface" src="Images/facebook%20logo%20uden%20baggrund.png" height="30" width="30"/>
         <img src="images/instagramm-clipart-instergram-18 resized.png" height="30" width="40"/>
         <h2 class="footertekst2">Nevarra, Spain</h2>
     </footer>
-</div>
+</header>
 
 <!--SLIDESHOW-->
 
-<div class="slideshow-container">
+<main class="slideshow-container">
 
     <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
+        <div class="numbertext"></div>
         <img src="Images/billede1.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
+        <div class="numbertext"></div>
         <img src="Images/billede2.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
+        <div class="numbertext"></div>
         <img src="Images/billede3.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
+    </div>
+
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
+
+
+</main>
 <br>
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
 
-    <script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+
         var slideIndex = 1;
         showSlides(slideIndex);
 
