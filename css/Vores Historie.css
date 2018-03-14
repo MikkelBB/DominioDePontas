@@ -45,6 +45,7 @@ h2 {
 
   .headerweb {
     display: block;
+    z-index: 100;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.9);
     width: 250px;
@@ -109,11 +110,16 @@ h2 {
     text-align: center;
     grid-column: 1 / 3; }
 
+  .image1 {
+    position: relative; }
+
   .boks1 {
+    position: absolute;
     width: 500px;
     height: 200px;
     background-color: black;
     opacity: 0.9;
-    z-index: 2; } }
+    margin-left: 35%;
+    margin-top: 50%; } }
 
 /*# sourceMappingURL=Vores%20Historie.css.map */
