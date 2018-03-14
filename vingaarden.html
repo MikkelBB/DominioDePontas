@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- Fortæller det er html5 -->
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
+<head>
+
+    <!-- Sætter tegnsætning til utf-8 som bl.a. tillader danske bogstaver -->
+    <meta charset="utf-8">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Sigende titel</title>
+
+    <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
+    <meta name="robots" content="All">
+    <meta name="author" content="Udgiver">
+    <meta name="copyright" content="Information om copyright">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="robots" content="index, follow"> <!--(noindex, nofollow, all)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OG (Open Graph) -->
+
+    <meta property="og:title" content="titel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.domain.dk">
+    <meta property="og:image" content="https://www.domain.dk/img.jpg">
+    <meta property="og:description" content="Beskrivelse">
+    <meta property="og:locale" content="da_DK">
+
+
+    <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
+    <link href="css/vingaarden.css" rel="stylesheet" type="text/css">
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+</head>
+
+<!-- i <body> har man alt indhold på siden -->
+<body>
+
+<!--MOBILE HEADER-->
+
+<header class="headerboxmobile">
+    <div class="logomobil">
+        <img src="Images/hvid%20logo%20mobil%201.png">
+    </div>
+    <nav class="mobilmenu">
+        <i class="fa fa-bars fa-3x"></i>
+        <!-- <ul>
+             <li><a href="#">Forside</a></li>
+             <li><a href="#">Historie</a></li>
+             <li><a href="#">Vingården</a></li>
+             <li><a href="#">Vine</a></li>
+         </ul> -->
+    </nav>
+</header>
+
+
+<!--WEB MENU-->
+
+<div class="headerweb">
+    <img class="menuimg" src="images/hvid logo web.png" height="300" width="169"/>
+    <nav class="menubar">
+        <h1>Forside</h1>
+        <h1>Vores Historie</h1>
+        <h1>Vingården</h1>
+        <h1>Vine</h1>
+    </nav>
+    <footer class="footer">
+        <h2 class="footertekst1">Følg os på sociale medier</h2>
+        <img class="footerface" src="images/facebook logo fixed.png" height="30" width="30"/>
+        <img src="images/instagramm-clipart-instergram-18 resized.png" height="30" width="40"/>
+        <h2 class="footertekst2">Nevarra, Spain</h2>
+        <h2 class="footertekst3">Copyright ©</h2>
+    </footer>
+</div>
+
+
+
+
+</body>
+</html>
