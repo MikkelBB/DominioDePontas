@@ -48,6 +48,10 @@ $white: #ffffff;
   font-family: proxima-soft, sans-serif;
   color: $white;
 }
+@mixin billedopskrift{
+  grid-column: 4/5;
+}
+
 h1{
   @include bookmania;
 }
@@ -59,19 +63,22 @@ h2{
 }
 
 @media screen and (min-width: 375px) {
-  // Alt der ændres i tablet stående fra mobil
 
-  .headerboxmobile{
-   background-color: black;
-   display: flex;
+  //DET DER SKJULES I MOBIL
+  .slideshow-container{
+    display: none;
+  }
+  .headerweb{
+    display: none;
+  }
 
-}
+//MOBILE HEADER
+
   .mobilmenu{
     color: white;
     padding-left: 5%;
     padding-top: 2%;
   }
-
   .logomobil{
     height: 80%;
     width: 80%;
@@ -81,15 +88,15 @@ h2{
     margin-left: -2%;
 
   }
-
-  .prev, .next,.text {font-size: 11px}
-  }
-  .slideshow-container{
-    display: none;
-  }
-  .headerweb{
-    display: none;
-  }
+//MOBILE CONTENT
+  .content{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+  .billede1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
@@ -97,13 +104,15 @@ h2{
 // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 @media screen and (min-width: 1200px) {
 
-
-  .headerboxmobile{
-    display: none;
-  }
+//DET DER SKJULES PÅ WEB
+  .content{
+  display: none;
+}
+  .billede1{
+  display: none;
+}
 
 //HEADER WEB
-
   .headerweb{
     display: grid;
     position: fixed;
