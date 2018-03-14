@@ -36,9 +36,33 @@ h2 {
   font-size: 15px;
   color: white; }
 
+@media screen and (min-width: 375px) {
+  .headerboxmobile {
+    background-color: black;
+    display: flex; }
+
+  .mobilmenu {
+    color: white;
+    padding-left: 5%;
+    padding-top: 2%; }
+
+  .logomobil {
+    height: 80%;
+    width: 80%;
+    padding-left: -5%;
+    margin-top: -37%;
+    margin-bottom: -45%;
+    margin-left: -2%; }
+
+  .headerweb {
+    display: none; } }
 @media screen and (min-width: 1200px) {
+  .headerboxmobile {
+    display: none; }
+
   .headerweb {
     position: fixed;
+    display: grid;
     background-color: rgba(0, 0, 0, 0.9);
     width: 250px;
     height: 100%;
@@ -51,30 +75,10 @@ h2 {
     margin-top: 25px; }
 
   .menubar {
-    width: 150px;
     display: grid;
-    grid-row-gap: 20px;
     grid-template-columns: 1fr;
+    grid-gap: 30px;
     margin-left: 38px; }
-
-  .menubar a {
-    text-decoration: none; }
-
-  .menubar a:hover {
-    border-bottom: solid 1px red;
-    border-top: solid 1px red; }
-
-  .forside {
-    width: 72px; }
-
-  .historie {
-    width: 130px; }
-
-  .vingaarden {
-    width: 100px; }
-
-  .vine {
-    width: 46px; }
 
   .footer {
     display: grid;
@@ -100,4 +104,4 @@ h2 {
     text-align: center;
     grid-column: 1 / 3; } }
 
-/*# sourceMappingURL=Vores%20Historie.css.map */
+/*# sourceMappingURL=vingaarden.css.map */
