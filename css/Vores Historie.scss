@@ -75,6 +75,7 @@ h2{
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
+    @include proxima;
   }
   .menuimg{
     margin-left: 36px;
@@ -129,6 +130,14 @@ h2{
   .footertekst3{
     text-align: center;
     grid-column: 1 / 3;
+  }
+
+  .boks1{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 2;
   }
 }
 @media print {
