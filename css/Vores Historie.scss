@@ -59,6 +59,10 @@ h2{
 }
 @media screen and (min-width: 375px) {
   // Alt der ændres i tablet stående fra mobil
+  .headerweb{
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -67,7 +71,12 @@ h2{
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  .headerboxmobile{
+    display: none;
+  }
+
   .headerweb{
+    display: block;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.9);
     width: 250px;
@@ -75,6 +84,7 @@ h2{
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
+    @include proxima;
   }
   .menuimg{
     margin-left: 36px;
@@ -95,16 +105,16 @@ h2{
     border-top: solid 1px red;
   }
   .forside{
-    width:72px;
+    width:75px;
   }
   .historie{
-    width: 130px;
+    width: 146px;
   }
   .vingaarden{
-    width: 100px;
+    width: 110px;
   }
   .vine{
-    width: 46px;
+    width: 50px;
   }
   .footer{
     display: grid;
@@ -129,6 +139,14 @@ h2{
   .footertekst3{
     text-align: center;
     grid-column: 1 / 3;
+  }
+
+  .boks1{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 2;
   }
 }
 @media print {
