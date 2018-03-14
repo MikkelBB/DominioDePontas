@@ -36,8 +36,15 @@ h2 {
   font-size: 15px;
   color: white; }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 375px) {
   .headerweb {
+    display: none; } }
+@media screen and (min-width: 1200px) {
+  .headerboxmobile {
+    display: none; }
+
+  .headerweb {
+    display: block;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.9);
     width: 250px;
@@ -67,16 +74,16 @@ h2 {
     border-top: solid 1px red; }
 
   .forside {
-    width: 72px; }
+    width: 75px; }
 
   .historie {
-    width: 130px; }
+    width: 146px; }
 
   .vingaarden {
-    width: 100px; }
+    width: 110px; }
 
   .vine {
-    width: 46px; }
+    width: 50px; }
 
   .footer {
     display: grid;
