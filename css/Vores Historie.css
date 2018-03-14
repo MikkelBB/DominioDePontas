@@ -51,10 +51,30 @@ h2 {
     margin-top: 25px; }
 
   .menubar {
+    width: 150px;
     display: grid;
+    grid-row-gap: 20px;
     grid-template-columns: 1fr;
-    grid-gap: 30px;
     margin-left: 38px; }
+
+  .menubar a {
+    text-decoration: none; }
+
+  .menubar a:hover {
+    border-bottom: solid 1px red;
+    border-top: solid 1px red; }
+
+  .forside {
+    width: 72px; }
+
+  .historie {
+    width: 130px; }
+
+  .vingaarden {
+    width: 100px; }
+
+  .vine {
+    width: 46px; }
 
   .footer {
     display: grid;
