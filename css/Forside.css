@@ -64,7 +64,7 @@ h2 {
   .billede1 {
     grid-column-start: 1;
     grid-column-end: 2; } }
-@media screen and (min-width: 375px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .content {
     display: none; }
 
@@ -138,8 +138,8 @@ h2 {
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0; } }
-@media screen and (min-width: 375px) {
+    border-radius: 0 3px 3px 0; }
+
   /* Placer n├ªste knappen til h├©jre */
   .next {
     right: 0;
@@ -177,12 +177,12 @@ h2 {
 
   @-webkit-keyframes fade {
     from {
-      opacity: .4; }
+      opacity: 0.4; }
     to {
       opacity: 1; } }
   @keyframes fade {
     from {
-      opacity: .4; }
+      opacity: 0.4; }
     to {
       opacity: 1; } } }
 
