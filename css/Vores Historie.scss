@@ -74,8 +74,12 @@ h2{
   .mobilmenu {
     grid-column: 3 / 4;
     color: white;
-    margin-left: 30%;
+    margin-left: 40%;
     margin-top: 15%;
+    a{
+      text-decoration: none;
+      color: $white;
+    }
   }
   .logomobil {
     justify-content: center;
@@ -85,7 +89,7 @@ h2{
     padding-left: -5%;
     margin-top: -37%;
     margin-bottom: -45%;
-    margin-left: -2%;
+    margin-left: -4%;
 
   }
 }
@@ -119,17 +123,37 @@ h2{
   .menubar {
     width: 150px;
     display: grid;
-    grid-row-gap: 20px;
+    grid-row-gap: 15px;
     grid-template-columns: 1fr;
     margin-left: 38px;
-  }
   a{
     text-decoration: none;
+    position: relative;
   }
-  .menubar a:hover{
-    border-bottom: solid 1px red;
-    border-top: solid 1px red;
+    a:before{
+      content: '';
+      display: block;
+      border-bottom: 3px solid $red;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+    }
+    a:hover:before{
+      width: 100%;
+    }
+    a:after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid $red;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
   }
+  a:hover:after {
+    width: 100%;
+  }
+  }
+
   .forside{
     width:75px;
   }
