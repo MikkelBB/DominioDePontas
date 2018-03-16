@@ -48,8 +48,11 @@ h2 {
   .mobilmenu {
     grid-column: 3 / 4;
     color: white;
-    margin-left: 30%;
+    margin-left: 40%;
     margin-top: 15%; }
+    .mobilmenu a {
+      text-decoration: none;
+      color: #ffffff; }
 
   .logomobil {
     justify-content: center;
@@ -59,7 +62,7 @@ h2 {
     padding-left: -5%;
     margin-top: -37%;
     margin-bottom: -45%;
-    margin-left: -2%; } }
+    margin-left: -4%; } }
 @media screen and (min-width: 1200px) {
   .headerboxmobile {
     display: none; }
@@ -84,16 +87,30 @@ h2 {
   .menubar {
     width: 150px;
     display: grid;
-    grid-row-gap: 20px;
+    grid-row-gap: 15px;
     grid-template-columns: 1fr;
     margin-left: 38px; }
-
-  a {
-    text-decoration: none; }
-
-  .menubar a:hover {
-    border-bottom: solid 1px red;
-    border-top: solid 1px red; }
+    .menubar a {
+      text-decoration: none;
+      position: relative; }
+    .menubar a:before {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #b00030;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
+    .menubar a:hover:before {
+      width: 100%; }
+    .menubar a:after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #b00030;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
+    .menubar a:hover:after {
+      width: 100%; }
 
   .forside {
     width: 75px; }
@@ -173,7 +190,7 @@ h2 {
     background-color: black;
     margin-left: 40%;
     margin-top: -33%;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
     color: #ffffff;
     padding: 10px;
     font-family: proxima-soft, sans-serif;
