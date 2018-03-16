@@ -60,24 +60,7 @@ h2{
 
 @media screen and (min-width: 375px) {
 
-  .headerboxmobile{
-    background-color: black;
-    display: flex;
-  }
-  .mobilmenu{
-    color: white;
-    padding-left: 5%;
-    padding-top: 2%;
-  }
 
-  .logomobil{
-    height: 80%;
-    width: 80%;
-    padding-left: -5%;
-    margin-top: -37%;
-    margin-bottom: -45%;
-    margin-left: -2%;
-  }
   .headerweb{
     display: none;
   }
@@ -88,9 +71,7 @@ h2{
 }
 
 @media screen and (min-width: 1200px) {
-  .headerboxmobile{
-    display: none;
-  }
+
 //HEADER WEB
 
   .headerweb{
