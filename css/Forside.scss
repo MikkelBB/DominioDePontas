@@ -74,20 +74,7 @@ h2{
 
   //MOBILE HEADER
 
-  .mobilmenu {
-    color: white;
-    padding-left: 5%;
-    padding-top: 2%;
-  }
-  .logomobil {
-    height: 80%;
-    width: 80%;
-    padding-left: -5%;
-    margin-top: -37%;
-    margin-bottom: -45%;
-    margin-left: -2%;
 
-  }
   //MOBILE CONTENT
   .content {
     display: grid;
@@ -96,6 +83,19 @@ h2{
   .billede1 {
     grid-column-start: 1;
     grid-column-end: 2;
+    position: relative;
+  }
+  .welcome{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);;
+    width: 250px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 35px;
+    @include proxima;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   }
 }
   @media screen and (min-width: 992px) {
