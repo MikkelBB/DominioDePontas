@@ -47,7 +47,50 @@
 
 
 <!--MOBILE HEADER-->
+<header class="headerboxmobile">
+    <div class="logomobil">
+        <img src="Images/hvid%20logo%20mobil%201.png">
+    </div>
+    <nav class="mobilmenu">
+        <div class="navmobile">
+            <span id="navbars" class="fa fa-bars"></span>
+        </div>
+        <div id="navmenu">
+            <a href="#">Forside</a>
+            <a href="#">Historie</a>
+            <a href="#">Vingården</a>
+            <a href="#">Vine</a>
+        </div>
+    </nav>
+</header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        var navOpen = 0;
 
+        $("#navbars").click(function (e) {
+            if(navOpen == 1) {
+                $("#navmenu").slideUp(200);
+                navOpen = 0;
+            } else {
+                $("#navmenu").slideDown(500);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if(width > 767) {
+                $("#navmenu").css({"display":"-webfit-flex", "display":"flex"});
+            } else {
+                $("#navmenu").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+    });
+</script>
 
 <!--MOBILE CONTENT-->
 
@@ -69,10 +112,10 @@
 <header class="headerweb">
     <img class="menuimg" src="images/hvid logo web.png" height="300" width="169"/>
     <nav class="menubar">
-        <a href="#"><h1>Forside</h1></a>
-        <a href="vores%20historie.html"><h1>Vores Historie</h1></a>
-        <a href="#"><h1>Vingården</h1></a>
-        <a href="#"><h1>Vine</h1></a>
+        <a href="Forside.html" class="forside"><h1>Forside</h1></a>
+        <a href="vores%20historie.html" class="historie"><h1>Vores Historie</h1></a>
+        <a href="vingaarden.html" class="vingaarden"><h1>Vingården</h1></a>
+        <a href="Vine.html" class="vine"><h1>Vine</h1></a>
     </nav>
     <footer class="footer">
         <h2 class="footertekst1">Følg os på sociale medier</h2>
@@ -111,11 +154,8 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-
-
 </main>
 <br>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
