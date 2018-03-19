@@ -118,6 +118,52 @@ h2{
     text-align: center;
     grid-column: 1 / 3;
   }
+
+  .image1{
+    position: relative;
+  }
+  .boks1{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    margin-left: 40%;
+    margin-top: -33%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    color: $white;
+    padding: 10px;
+    @include proxima;
+  }
+  .image2{
+    position: relative;
+  }
+  .boks2{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    margin-left: 40%;
+    margin-top: -33%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    color: $white;
+    padding: 10px;
+    @include proxima;
+  }
+  .image3{
+    position: relative;
+  }
+  .boks3{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    margin-left: 40%;
+    margin-top: -33%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    color: $white;
+    padding: 10px;
+    @include proxima;
+  }
 }
 
 @media print {
