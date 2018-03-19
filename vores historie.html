@@ -46,7 +46,7 @@
         <img src="Images/hvid%20logo%20mobil%201.png">
     </div>
     <nav class="mobilmenu">
-        <a href="#" ><i class="fa fa-bars fa-3x"></i></a>
+        <span id="navbars"><i class="fa fa-bars fa-3x"></i></span>
         <!-- <ul>
              <li><a href="#">Forside</a></li>
              <li><a href="#">Historie</a></li>
@@ -55,6 +55,37 @@
          </ul> -->
     </nav>
 </header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        var navOpen = 0;
+
+        $("#navbars").click(function (e) {
+            if(navOpen == 1) {
+                $("#menubar").slideUp(200);
+                navOpen = 0;
+            } else {
+                $("#menubar").slideDown(500);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if(width > 767) {
+                $("#menubar").css({"display":"-webfit-flex", "display":"flex"});
+            } else {
+                $("#menubar").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
+    });
+</script>
+
+
 
 <!-- Web MENU -->
 <header class="headerweb">
