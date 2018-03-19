@@ -193,4 +193,11 @@ h3 {
   background: linear-gradient(to right, #000000, #5c5553);
   grid-column: 1/5; }
 
+#redhide, #whitehide, #rosehide, #porthide {
+  font-family: proxima-soft, sans-serif;
+  color: #ffffff;
+  display: none;
+  margin-left: 300px;
+  margin-right: 200px; }
+
 /*# sourceMappingURL=Vine.css.map */

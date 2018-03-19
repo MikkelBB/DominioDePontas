@@ -46,16 +46,17 @@
         <img src="Images/hvid%20logo%20mobil%201.png">
     </div>
     <nav class="mobilmenu">
-        <a href="#" ><i class="fa fa-bars fa-3x"></i></a>
-        <!-- <ul>
-             <li><a href="#">Forside</a></li>
-             <li><a href="#">Historie</a></li>
-             <li><a href="#">Vingården</a></li>
-             <li><a href="#">Vine</a></li>
-         </ul> -->
+        <div class="navmobile">
+            <span id="navbars" class="fa fa-bars"></span>
+        </div>
+        <div id="navmenu">
+             <a href="#">Forside</a>
+             <a href="#">Historie</a>
+             <a href="#">Vingården</a>
+             <a href="#">Vine</a>
+        </div>
     </nav>
 </header>
-
 <!-- Web MENU -->
 <header class="headerweb">
     <img class="menuimg" src="images/hvid logo web.png" height="300" width="169"/>
@@ -65,6 +66,35 @@
         <a href="vingaarden.html" class="vingaarden"><h1>Vingården</h1></a>
         <a href="Vine.html" class="vine"><h1>Vine</h1></a>
     </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            var navOpen = 0;
+
+            $("#navbars").click(function (e) {
+                if(navOpen == 1) {
+                    $("#navmenu").slideUp(200);
+                    navOpen = 0;
+                } else {
+                    $("#navmenu").slideDown(500);
+                    navOpen = 1;
+                }
+            });
+
+            $(window).resize(function (e) {
+                var width = $(window).width();
+
+                if(width > 767) {
+                    $("#navmenu").css({"display":"-webfit-flex", "display":"flex"});
+                } else {
+                    $("#navmenu").css("display", "none");
+                    navOpen = 0;
+                }
+            });
+
+        });
+    </script>
+
     <footer class="footer">
         <h2 class="footertekst1">Følg os på sociale medier</h2>
         <a href="#" class="faceimg"><img class="footerface" src="images/facebook logo uden baggrund.png" height="30" width="30"/></a>
