@@ -260,6 +260,9 @@ h3{
 }
 
 #redhide, #whitehide, #rosehide, #porthide{
+  @include proxima;
   display: none;
+  margin-left: 300px;
+  margin-right: 200px;
 }
 
