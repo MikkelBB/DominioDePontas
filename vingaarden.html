@@ -43,7 +43,25 @@
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
-<body>
+
+<!--TOP KNAP-->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 <!--MOBILE HEADER-->
 <header class="headerboxmobile">
@@ -157,6 +175,9 @@
         dække en bred målgruppe af vinelskere.
     </div>
 </section>
+
+
+
 
 
 
