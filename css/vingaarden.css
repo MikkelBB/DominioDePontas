@@ -80,7 +80,8 @@ h2 {
 
   #navbars {
     font-size: 40px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: white; }
 
   #navmenu {
     display: none;
@@ -102,26 +103,71 @@ h2 {
     background-color: #b00030;
     cursor: pointer; } }
 @media screen and (min-width: 1200px) {
+  .headerboxmobile {
+    display: none; }
+
+  #navmenu {
+    display: none; }
+
+  .navmobile {
+    display: none; }
+
   .headerweb {
+    display: block;
+    z-index: 100;
     position: fixed;
-    display: grid;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
     width: 250px;
     height: 100%;
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
-    z-index: 10; }
+    font-family: proxima-soft, sans-serif;
+    color: #ffffff; }
 
   .menuimg {
     margin-left: 36px;
     margin-top: 25px; }
 
   .menubar {
+    width: 150px;
     display: grid;
+    grid-row-gap: 15px;
     grid-template-columns: 1fr;
-    grid-gap: 30px;
     margin-left: 38px; }
+    .menubar a {
+      text-decoration: none;
+      position: relative; }
+    .menubar a:before {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #b00030;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
+    .menubar a:hover:before {
+      width: 100%; }
+    .menubar a:after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #b00030;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
+    .menubar a:hover:after {
+      width: 100%; }
+
+  .forside {
+    width: 75px; }
+
+  .historie {
+    width: 146px; }
+
+  .vingaarden {
+    width: 110px; }
+
+  .vine {
+    width: 50px; }
 
   .footer {
     display: grid;
@@ -146,6 +192,14 @@ h2 {
   .footertekst3 {
     text-align: center;
     grid-column: 1 / 3; }
+
+  .face {
+    width: 25px;
+    height: 20px; }
+
+  .insta {
+    width: 45px;
+    height: 20px; }
 
   .image1 {
     position: relative; }

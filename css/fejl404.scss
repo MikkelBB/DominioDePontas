@@ -36,8 +36,22 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 375px) {
   // Alt der ændres i tablet stående fra mobil
+.img{
+  position: relative;
+}
+.text404{
+  position: absolute;
+  margin-left: 35%;
+  margin-top: -40%;
+  color: black;
+  font-size: 300px;
+}
+
+
+
+
 }
 
 @media screen and (min-width: 992px) {
