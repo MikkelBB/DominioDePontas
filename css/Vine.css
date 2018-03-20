@@ -103,6 +103,9 @@ h3 {
     background-color: #b00030;
     cursor: pointer; }
 
+  .grid {
+    display: grid; }
+
   img {
     display: block;
     max-width: 100%;

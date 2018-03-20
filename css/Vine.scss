@@ -135,6 +135,10 @@ h3{
     background-color: $red;
     cursor: pointer;
   }
+  .grid{
+    display: grid;
+
+  }
 
   img {
     display: block; // Billeder er et element (laver linjeskift)
