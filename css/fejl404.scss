@@ -35,7 +35,10 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
-
+$red: #b00030;
+$grey: #5c5553;
+$black: #000000;
+$white: #ffffff;
 @media screen and (min-width: 375px) {
   // Alt der ændres i tablet stående fra mobil
 .img{
@@ -45,10 +48,20 @@ img {
   position: absolute;
   margin-left: 35%;
   margin-top: -40%;
-  color: black;
+  color: white;
   font-size: 300px;
 }
-
+.text{
+  position: absolute;
+  margin-left: 34%;
+  margin-top: -20%;
+  color: white;
+  font-size: 20px;
+  a{
+    text-decoration: none;
+    color: $red;
+  }
+}
 
 
 
