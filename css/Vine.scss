@@ -72,6 +72,70 @@ h3{
     display: none;
   }
 
+  .headerboxmobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $black;
+  }
+  .mobilmenu {
+    grid-column: 3 / 4;
+    color: white;
+    margin-top: 20%;
+    margin-left: -20%;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  .logomobil {
+    justify-content: center;
+    grid-column: 1 / 3;
+    height: 80%;
+    width: 80%;
+    padding-left: -5%;
+    margin-top: -37%;
+    margin-bottom: -45%;
+    margin-left: -4%;
+  }
+  .mobilmenu {
+    text-align: right;
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    font-size: 20px;
+    position: relative;
+  }
+  #navmobile {
+    line-height: 46px;
+    height: 46px;
+    color: white;
+    padding: 0 30px;
+  }
+  #navbars {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  #navmenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+  #navmenu a {
+    display: block;
+    line-height: 46px;
+    height: 46px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+  }
+  #navmenu a:hover {
+    background-color: $red;
+    cursor: pointer;
+  }
+
   img {
     display: block; // Billeder er et element (laver linjeskift)
     max-width: 100%; // Bredde må maks fylde 100%
@@ -83,6 +147,10 @@ h3{
     @include bookmania;
     margin: 30px;
     font-size: 30px;
+  }
+
+  #redhide, #whitehide, #rosehide, #porthide{
+    display: none;
   }
 }
 
@@ -182,6 +250,14 @@ h3{
     padding-left: 400px;
   }
 
+  #redhide, #whitehide, #rosehide, #porthide{
+    @include proxima;
+    margin-left: 300px;
+    margin-right: 200px;
+    width: 600px;
+    height: auto;
+  }
+
 }
 .grid{
   display: grid;
@@ -259,10 +335,5 @@ h3{
   grid-column: 1/5;
 }
 
-#redhide, #whitehide, #rosehide, #porthide{
-  @include proxima;
-  display: none;
-  margin-left: 300px;
-  margin-right: 200px;
-}
+
 

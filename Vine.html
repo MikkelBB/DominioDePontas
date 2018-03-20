@@ -42,6 +42,8 @@
 
     <link href="css/Vine.css" rel="stylesheet" type="text/css">
 
+    <script src="https://use.fontawesome.com/75970a48c3.js"></script>
+
 
 </head>
 
@@ -67,13 +69,31 @@
     </footer>
 </header>
 
+<!--MOBIL MENU -->
+<header class="headerboxmobile">
+    <div class="logomobil">
+        <img src="Images/hvid%20logo%20mobil%201.png">
+    </div>
+    <nav class="mobilmenu">
+        <div class="navmobile">
+            <span id="navbars" class="fa fa-bars"></span>
+        </div>
+        <div id="navmenu">
+            <a href="#">Forside</a>
+            <a href="#">Historie</a>
+            <a href="#">Vingården</a>
+            <a href="#">Vine</a>
+        </div>
+    </nav>
+</header>
+
 
 <!--content-->
 <div class="grid">
      <section class="redwine">
        <div class="redhead"><h3>Luna Roja</h3></div>
 
-        <p id="redhide">btbhgynhnhgnyfnghynyhgnghgngnrfgtfnfgfnnfngfngnfngfn
+        <div id="redhide">btbhgynhnhgnyfnghynyhgnghgngnrfgtfnfgfnnfngfngnfngfn
         vblervljfnfjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjv
         dknvkllllllllnnsssssssssssssssss
         svdmmmmmmmmmmmmmmmmmmmmkkkkkkkmmmmkkkkkkkkkkkkkkkkkkkkkkkkkkk
@@ -82,7 +102,7 @@
             ddddddddddsssssssssssssss
             aDDDDsdddddddddddddddddddddddddddddddddddddddddddddddddddddddd
             grffdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-        </p>
+        </div>
      </section>
     <div class="redimg"><img src="Images/redfinal.png"/>
     </div>
@@ -129,11 +149,34 @@
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 <script>
 
     $(document).ready(function(e) {
+        var navOpen = 0;
+
+        $("#navbars").click(function (e) {
+            if(navOpen == 1) {
+                $("#navmenu").slideUp(200);
+                navOpen = 0;
+            } else {
+                $("#navmenu").slideDown(500);
+                navOpen = 1;
+            }
+        });
+
+        $(window).resize(function (e) {
+            var width = $(window).width();
+
+            if(width > 767) {
+                $("#navmenu").css({"display":"-webfit-flex", "display":"flex"});
+            } else {
+                $("#navmenu").css("display", "none");
+                navOpen = 0;
+            }
+        });
+
         $(".redwine").hover(function (e) {
          $("#redhide").show(2000);
         })
