@@ -35,6 +35,7 @@ img {
   max-width: 100%; // Bredde må maks fylde 100%
   height: auto; // Højden skal tilpasse sig
 }
+//MIXINS
 $red: #b00030;
 $grey: #5c5553;
 $black: #000000;
@@ -73,7 +74,69 @@ h2{
   }
 
   //MOBILE HEADER
-
+  .headerboxmobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $black;
+  }
+  .mobilmenu {
+    grid-column: 3 / 4;
+    color: white;
+    margin-top: 20%;
+    margin-left: -20%;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  .logomobil {
+    justify-content: center;
+    grid-column: 1 / 3;
+    height: 80%;
+    width: 80%;
+    padding-left: -5%;
+    margin-top: -37%;
+    margin-bottom: -45%;
+    margin-left: -4%;
+  }
+  .mobilmenu {
+    text-align: right;
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    font-size: 20px;
+    position: relative;
+  }
+  #navmobile {
+    line-height: 46px;
+    height: 46px;
+    color: white;
+    padding: 0 30px;
+  }
+  #navbars {
+    font-size: 40px;
+    cursor: pointer;
+  }
+  #navmenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+  #navmenu a {
+    display: block;
+    line-height: 46px;
+    height: 46px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+  }
+  #navmenu a:hover {
+    background-color: $red;
+    cursor: pointer;
+  }
 
   //MOBILE CONTENT
   .content {
@@ -105,6 +168,15 @@ h2{
   @media screen and (min-width: 1200px) {
 
     //DET DER SKJULES PÅ WEB
+    .headerboxmobile{
+      display: none;
+    }
+    #navmenu{
+      display: none;
+    }
+    .navmobile{
+      display: none;
+    }
     .content {
       display: none;
     }
@@ -116,7 +188,7 @@ h2{
     .headerweb {
       display: block;
       position: fixed;
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: black;
       width: 250px;
       height: 100%;
       margin-top: 0;
@@ -130,46 +202,89 @@ h2{
     .menubar {
       display: grid;
       grid-template-columns: 1fr;
-      grid-row-gap: 20px;
+      grid-row-gap: 15px;
       margin-left: 38px;
       text-decoration: none;
     }
+    //HOVER EFFEKT
     a {
       text-decoration: none;
+      position: relative;
     }
-
-    .footer {
+    a:before{
+      content: '';
+      display: block;
+      border-bottom: 3px solid $red;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+    }
+    a:hover:before{
+      width: 100%;
+    }
+    a:after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid $red;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+    }
+    a:hover:after {
+      width: 100%;
+    }
+  }
+    .forside{
+      width:75px;
+    }
+    .historie{
+      width: 146px;
+    }
+    .vingaarden{
+      width: 110px;
+    }
+    .vine{
+      width: 50px;
+    }
+    //FOOTER
+    .footer{
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 50px 50px 20px;
       width: 250px;
-      height: 300px;
+      height: 150px;
       margin-top: 80px;
     }
-    .footertekst1 {
+    .footertekst1{
+      padding: 10px;
       grid-column: 1 / 3;
       text-align: center;
-      padding: 15px;
     }
-    .footerface {
+    .footerface{
       margin-left: 90px;
     }
-    .footertekst2 {
+    .footertekst2{
       grid-column: 1 / 3;
       text-align: center;
     }
     .footertekst3{
-      grid-column: 1 / 3;
       text-align: center;
+      grid-column: 1 / 3;
+    }
+    .face{
+      width: 25px;
+      height:20px;
+    }
+    .insta{
+      width: 45px;
+      height:20px;
     }
 
     //SLIDESHOW
-
     /* Slideshow container */
     .slideshow-container {
       display: flex;
       max-width: 1400px;
-
       position: relative;
       margin-left: 250px;
     }
@@ -178,7 +293,6 @@ h2{
     .mySlides {
       display: none;
     }
-
     /* Tilbage og næste knapper */
     .prev, .next {
       cursor: pointer;
@@ -193,25 +307,21 @@ h2{
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
     }
-
     /* Placer næste knappen til højre */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-
     /* I hover tilføj en sort baggrund med lidt gennemsigtighed*/
     .prev:hover, .next:hover {
       background-color: rgba(0, 0, 0, 0.8);
     }
-
     /* Prikkerne i bunden */
     .dots {
       position: absolute;
-      bottom: 20px;
+      bottom: 120px;
       left: 47%;
     }
-
     .dot {
       cursor: pointer;
       height: 15px;
@@ -223,11 +333,9 @@ h2{
       transition: background-color 0.6s ease;
 
     }
-
     .active, .dot:hover {
       background-color: #717171;
     }
-
     /* Fade animation */
     .fade {
       -webkit-animation-name: fade;
@@ -254,7 +362,7 @@ h2{
       }
     }
 
-  }
+
 
 @media print {
   // Alt der gælder for print specifikt

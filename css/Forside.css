@@ -44,6 +44,68 @@ h2 {
   .headerweb {
     display: none; }
 
+  .headerboxmobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #000000; }
+
+  .mobilmenu {
+    grid-column: 3 / 4;
+    color: white;
+    margin-top: 20%;
+    margin-left: -20%; }
+    .mobilmenu a {
+      text-decoration: none;
+      color: #ffffff; }
+
+  .logomobil {
+    justify-content: center;
+    grid-column: 1 / 3;
+    height: 80%;
+    width: 80%;
+    padding-left: -5%;
+    margin-top: -37%;
+    margin-bottom: -45%;
+    margin-left: -4%; }
+
+  .mobilmenu {
+    text-align: right;
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    font-size: 20px;
+    position: relative; }
+
+  #navmobile {
+    line-height: 46px;
+    height: 46px;
+    color: white;
+    padding: 0 30px; }
+
+  #navbars {
+    font-size: 40px;
+    cursor: pointer; }
+
+  #navmenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100; }
+
+  #navmenu a {
+    display: block;
+    line-height: 46px;
+    height: 46px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white; }
+
+  #navmenu a:hover {
+    background-color: #b00030;
+    cursor: pointer; }
+
   .content {
     display: grid;
     grid-template-columns: 1fr; }
@@ -66,6 +128,15 @@ h2 {
     color: #ffffff;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.3); } }
 @media screen and (min-width: 1200px) {
+  .headerboxmobile {
+    display: none; }
+
+  #navmenu {
+    display: none; }
+
+  .navmobile {
+    display: none; }
+
   .content {
     display: none; }
 
@@ -75,7 +146,7 @@ h2 {
   .headerweb {
     display: block;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: black;
     width: 250px;
     height: 100%;
     margin-top: 0;
@@ -89,106 +160,148 @@ h2 {
   .menubar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 20px;
+    grid-row-gap: 15px;
     margin-left: 38px;
     text-decoration: none; }
 
   a {
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative; }
 
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 50px 20px;
-    width: 250px;
-    height: 300px;
-    margin-top: 80px; }
+  a:before {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #b00030;
+    width: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease; }
 
-  .footertekst1 {
-    grid-column: 1 / 3;
-    text-align: center;
-    padding: 15px; }
+  a:hover:before {
+    width: 100%; }
 
-  .footerface {
-    margin-left: 90px; }
+  a:after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #b00030;
+    width: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease; }
 
-  .footertekst2 {
-    grid-column: 1 / 3;
-    text-align: center; }
+  a:hover:after {
+    width: 100%; } }
+.forside {
+  width: 75px; }
 
-  .footertekst3 {
-    grid-column: 1 / 3;
-    text-align: center; }
+.historie {
+  width: 146px; }
 
-  /* Slideshow container */
-  .slideshow-container {
-    display: flex;
-    max-width: 1400px;
-    position: relative;
-    margin-left: 250px; }
+.vingaarden {
+  width: 110px; }
 
-  /* Gemmer billederne fra standard */
-  .mySlides {
-    display: none; }
+.vine {
+  width: 50px; }
 
-  /* Tilbage og n├ªste knapper */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0; }
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 20px;
+  width: 250px;
+  height: 150px;
+  margin-top: 80px; }
 
-  /* Placer n├ªste knappen til h├©jre */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px; }
+.footertekst1 {
+  padding: 10px;
+  grid-column: 1 / 3;
+  text-align: center; }
 
-  /* I hover tilf├©j en sort baggrund med lidt gennemsigtighed*/
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); }
+.footerface {
+  margin-left: 90px; }
 
-  /* Prikkerne i bunden */
-  .dots {
-    position: absolute;
-    bottom: 20px;
-    left: 47%; }
+.footertekst2 {
+  grid-column: 1 / 3;
+  text-align: center; }
 
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease; }
+.footertekst3 {
+  text-align: center;
+  grid-column: 1 / 3; }
 
-  .active, .dot:hover {
-    background-color: #717171; }
+.face {
+  width: 25px;
+  height: 20px; }
 
-  /* Fade animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s; }
+.insta {
+  width: 45px;
+  height: 20px; }
 
-  @-webkit-keyframes fade {
-    from {
-      opacity: 0.4; }
-    to {
-      opacity: 1; } }
-  @keyframes fade {
-    from {
-      opacity: 0.4; }
-    to {
-      opacity: 1; } } }
+/* Slideshow container */
+.slideshow-container {
+  display: flex;
+  max-width: 1400px;
+  position: relative;
+  margin-left: 250px; }
+
+/* Gemmer billederne fra standard */
+.mySlides {
+  display: none; }
+
+/* Tilbage og n├ªste knapper */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
+/* Placer n├ªste knappen til h├©jre */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* I hover tilf├©j en sort baggrund med lidt gennemsigtighed*/
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Prikkerne i bunden */
+.dots {
+  position: absolute;
+  bottom: 120px;
+  left: 47%; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active, .dot:hover {
+  background-color: #717171; }
+
+/* Fade animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=Forside.css.map */

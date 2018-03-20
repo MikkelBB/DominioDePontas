@@ -136,6 +136,7 @@ h3 {
     margin-top: 25px; }
 
   .menubar {
+    display: grid;
     margin-bottom: 20px;
     padding-bottom: 50px;
     margin-top: -18px;
