@@ -241,34 +241,37 @@ h2{
     height:20px;
   }
 
+//CONTENT
+
   .image1{
     position: relative;
   }
   .boks1{
     position: absolute;
-    width: 500px;
-    height: 200px;
+    width: 700px;
+    height: 380px;
     background-color: black;
-    margin-left: 40%;
-    margin-top: -33%;
+    margin-left: 35%;
+    margin-top: -48%;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
     color: $white;
-    padding: 10px;
+    padding: 65px ;
     @include proxima;
+
   }
   .image2{
     position: relative;
   }
   .boks2{
     position: absolute;
-    width: 500px;
-    height: 200px;
+    width: 700px;
+    height: 400px;
     background-color: black;
-    margin-left: 40%;
-    margin-top: -33%;
+    margin-left: 35%;
+    margin-top: -48%;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
     color: $white;
-    padding: 10px;
+    padding: 65px ;
     @include proxima;
   }
   .image3{
@@ -276,14 +279,14 @@ h2{
   }
   .boks3{
     position: absolute;
-    width: 500px;
-    height: 200px;
+    width: 700px;
+    height: 380px;
     background-color: black;
-    margin-left: 40%;
-    margin-top: -33%;
+    margin-left: 35%;
+    margin-top: -48%;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
     color: $white;
-    padding: 10px;
+    padding: 65px ;
     @include proxima;
   }
 }
