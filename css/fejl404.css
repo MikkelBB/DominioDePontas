@@ -1,0 +1,50 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside; }
+
+li {
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+@media screen and (min-width: 375px) {
+  .img {
+    position: relative; }
+
+  .text404 {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -40%;
+    color: white;
+    font-size: 300px; }
+
+  .text {
+    position: absolute;
+    margin-left: 34%;
+    margin-top: -20%;
+    color: white;
+    font-size: 20px; }
+    .text a {
+      text-decoration: none;
+      color: #b00030; } }
+
+/*# sourceMappingURL=fejl404.css.map */
