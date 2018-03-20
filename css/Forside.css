@@ -163,32 +163,27 @@ h2 {
     grid-row-gap: 15px;
     margin-left: 38px;
     text-decoration: none; }
-
-  a {
-    text-decoration: none;
-    position: relative; }
-
-  a:before {
-    content: '';
-    display: block;
-    border-bottom: 3px solid #b00030;
-    width: 0;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
-
-  a:hover:before {
-    width: 100%; }
-
-  a:after {
-    content: '';
-    display: block;
-    border-bottom: 3px solid #b00030;
-    width: 0;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
-
-  a:hover:after {
-    width: 100%; } }
+    .menubar a {
+      text-decoration: none;
+      position: relative; }
+    .menubar a:before {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #b00030;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
+    .menubar a:hover:before {
+      width: 100%; }
+    .menubar a:after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #b00030;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
+    .menubar a:hover:after {
+      width: 100%; } }
 .forside {
   width: 75px; }
 
