@@ -68,10 +68,10 @@ h3{
 
 @media screen and (min-width: 375px) {
 
-  .headerweb{
+  .headerweb {
     display: none;
   }
-
+  //Mobil Header
   .headerboxmobile {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -80,7 +80,7 @@ h3{
   .mobilmenu {
     grid-column: 3 / 4;
     color: white;
-    margin-top: 20%;
+    margin-top: 17%;
     margin-left: -20%;
     a {
       text-decoration: none;
@@ -108,7 +108,7 @@ h3{
   #navmobile {
     line-height: 46px;
     height: 46px;
-    color: white;
+    color: $red;
     padding: 0 30px;
   }
   #navbars {
@@ -136,6 +136,10 @@ h3{
     cursor: pointer;
   }
 
+  .grid{
+    display: grid;
+  }
+
   img {
     display: block; // Billeder er et element (laver linjeskift)
     max-width: 100%; // Bredde må maks fylde 100%
@@ -159,47 +163,86 @@ h3{
   .headerboxmobile{
     display: none;
   }
-  //HEADER WEB
+  #navmenu{
+    display: none;
+  }
+  .navmobile{
+    display: none;
+  }
+  //content styling
   .headerweb{
     display: block;
+    z-index: 100;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 1);
     width: 250px;
     height: 100%;
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
+    @include proxima;
   }
   .menuimg{
     margin-left: 36px;
     margin-top: 25px;
   }
-  .menubar{
+  .menubar {
+    width: 150px;
     display: grid;
-    margin-bottom: 20px;
-    padding-bottom: 50px;
-    margin-top: -18px;
+    grid-row-gap: 15px;
     grid-template-columns: 1fr;
     margin-left: 38px;
-    text-decoration: none;
+    a{
+      text-decoration: none;
+      position: relative;
+    }
+    a:before{
+      content: '';
+      display: block;
+      border-bottom: 3px solid $red;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+    }
+    a:hover:before{
+      width: 100%;
+    }
+    a:after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid $red;
+      width: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+    }
+    a:hover:after {
+      width: 100%;
+    }
   }
-  a{
-    text-decoration: none;
+  .forside{
+    width:75px;
   }
-
+  .historie{
+    width: 146px;
+  }
+  .vingaarden{
+    width: 110px;
+  }
+  .vine{
+    width: 50px;
+  }
   .footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 50px 20px;
     width: 250px;
-    height: 300px;
-
+    height: 150px;
+    margin-top: 80px;
   }
   .footertekst1{
+    padding: 10px;
     grid-column: 1 / 3;
     text-align: center;
-    padding-bottom: 15px;
-
   }
   .footerface{
     margin-left: 90px;
@@ -207,15 +250,19 @@ h3{
   .footertekst2{
     grid-column: 1 / 3;
     text-align: center;
-    margin-top: -2px;
-
   }
   .footertekst3{
-    grid-column: 1 / 3;
     text-align: center;
-    margin-top: -2px;
+    grid-column: 1 / 3;
   }
-
+  .face{
+    width: 25px;
+    height:20px;
+  }
+  .insta{
+    width: 45px;
+    height:20px;
+  }
 //CONTENT
 
   .redwine, .whitewine, .rosewine, .portwine{
@@ -257,6 +304,7 @@ h3{
     margin-right: 200px;
     width: 600px;
     height: auto;
+    font-size: 24px;
   }
 
 }
