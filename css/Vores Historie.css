@@ -40,6 +40,9 @@ h2 {
   .headerweb {
     display: none; }
 
+  #myBtn {
+    display: none; }
+
   .headerboxmobile {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
