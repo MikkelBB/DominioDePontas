@@ -151,7 +151,6 @@ h2 {
   .menubar {
     width: 150px;
     display: grid;
-    grid-row-gap: 15px;
     grid-template-columns: 1fr;
     margin-left: 38px; }
     .menubar a {
