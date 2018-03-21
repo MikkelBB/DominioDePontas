@@ -126,7 +126,7 @@
         <div class="rosehead"><h3>Dias de Verano - en sødmefuld delikat rosévin</h3></div>
         <br>
          <div id="rosehide">Dias de Verano er lavet på druen Moscato der giver den en smag af søde bær med en eftersmag af hyldeblomst.
-             Dias de Verano indbyder til at drikkes afkølet en varm sommeraften i godt selskab.
+             Dias de Verano indbyder til at drikkes afkølet en varm sommeraften i godt selskab.<br> <br>
              Den går rigtig godt sammen med salte og søde snacks som f.eks. peanuts, frugt og chokolade.
              Den karakteristiske dybe lyserøde tone klæder ethvert glas og gør vinen til et klassisk valg til en aften med veninderne eller en hyggelig aften derhjemme.
          </div>
@@ -178,15 +178,24 @@
             }
         });
         $(".redwine").hover(function (e) {
-            $("#redhide").show(2000);
+            $("#redhide").slideDown(900);
+        })
+
+        $(".whitewine").hover(function (e) {
+            $("#whitehide").slideDown(900);
+        })
+
+        $(".rosewine").hover(function (e) {
+            $("#rosehide").slideDown(900);
+        })
+
+        $(".portwine").hover(function (e) {
+            $("#porthide").slideDown(900);
         })
 
     });
 
 </script>
-
-
-
 
 </body>
 </html>
