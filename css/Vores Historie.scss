@@ -260,19 +260,20 @@ h2{
     width: 45px;
     height:20px;
   }
+//.......CONTENT.........//
   .image1{
     position: relative;
   }
   .boks1{
     position: absolute;
     width: 700px;
-    height: 380px;
+    height: 245px;
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: 35%;
     margin-top: -36%;
     box-shadow: 5px 4px rgba(0, 0, 0, 0.3);
     color: $white;
-    padding: 40px;
+    padding: 35px;
     @include proxima;
   }
   .image2{
@@ -281,13 +282,13 @@ h2{
   .boks2{
     position: absolute;
     width: 700px;
-    height: 380px;
+    height: 245px;
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: 35%;
     margin-top: -36%;
     box-shadow: 5px 4px rgba(0, 0, 0, 0.3);
     color: $white;
-    padding: 40px;
+    padding: 35px;
     @include proxima;
   }
   .image3{
@@ -296,13 +297,13 @@ h2{
   .boks3{
     position: absolute;
     width: 700px;
-    height: 380px;
+    height: 240px;
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: 35%;
     margin-top: -36%;
     box-shadow: 5px 4px rgba(0, 0, 0, 0.3);
     color: $white;
-    padding: 40px;
+    padding: 35px;
     @include proxima;
   }
   //TOP KNAP
