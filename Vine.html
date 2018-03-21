@@ -50,6 +50,23 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- Selve JQuery koden-->
+<script>
+    window.onscroll = function() {scrollFunction()};//funktion til at man scoller ned
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block"; //knappen vises når man er scollet ned på siden
+        } else {
+            document.getElementById("myBtn").style.display = "none"; //knappen vises ikke når man er øverst på siden
+        }
+    }
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
 <!--header-->
 <header class="headerboxmobile">
@@ -199,7 +216,6 @@
         });
 
     });
-
 
 </script>
 
