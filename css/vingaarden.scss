@@ -310,22 +310,21 @@ h2{
   }
   //TOP KNAP
   #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-
-    font-size: 18px;
+    display: none; //vises ikke fra standard
+    position: fixed; //rykker sig med når man scoller
+    bottom: 20px; //placeres i bunden
+    right: 30px; //places i bunden lidt fra højre
+    z-index: 99; //ligger sig helt øverst
+    border: none; //ingen border
+    outline: none; //ingen outline
+    background-color: rgba(0, 0, 0, 0.8); //gennemsigtighed på baggrundsfarven
+    color: white; //teksten står med hvid
+    cursor: pointer; //laver cursor om til en pointer når man holder over
+    padding: 15px; //15px hele vejen rundt om boksen
+    font-size: 18px; //skrift størrelsen er 18px
   }
-  #myBtn:hover {
-    background-color: #555;
+  #myBtn:hover { //når man hover over knappen
+    background-color: #555; //farven der vises når man hover
   }
 }
 

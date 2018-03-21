@@ -46,15 +46,17 @@
 
 <!--TOP KNAP-->
 
+<!-- Selve top knappen - med funktion der fører en til toppen når man trykker-->
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<!-- Selve JQuery koden-->
 <script>
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scrollFunction()};//funktion til at man scoller ned
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("myBtn").style.display = "block";
+            document.getElementById("myBtn").style.display = "block"; //knappen vises når man er scollet ned på siden
         } else {
-            document.getElementById("myBtn").style.display = "none";
+            document.getElementById("myBtn").style.display = "none"; //knappen vises ikke når man er øverst på siden
         }
     }
     function topFunction() {
@@ -137,7 +139,7 @@
         <img src="images/vingaard 1 resized.png"/>
     </div>
     <div class="boks1">
-        <h1>Vingården</h1><br><br>Dominio de Pontas vingården er dansk ejet og er opkøbt i fællesskab som et anpartsselskab.
+        <h1>Vingård</h1><br><br>Dominio de Pontas vingården er dansk ejet og er opkøbt i fællesskab som et anpartsselskab.
         Passionen til vin og ønsket om at dele denne passion er grunden til købet af denne vingård.<br><br>
         Vingården ligger i det nordlige Spanien i Navarra. Navarra Spanien er et kendt område til vinproduktion og vinhandel.
         Dominio de Pontas er blot en af de flere danske vingårde der er opkøbt i Spanien.
