@@ -32,11 +32,6 @@ h2 {
   font-size: 15px;
   color: white; }
 
-h3 {
-  font-family: bookmania, serif;
-  color: #ffffff;
-  font-size: 130%; }
-
 @media screen and (min-width: 375px) {
   .headerweb {
     display: none; }
@@ -114,12 +109,18 @@ h3 {
   .redhead, .whitehead, .rosehead, .porthead {
     font-family: bookmania, serif;
     color: #ffffff;
-    font-size: 130%;
     margin: 30px;
-    font-size: 30px; }
+    font-size: 28px !important; }
 
   #redhide, #whitehide, #rosehide, #porthide {
-    display: none; } }
+    font-family: proxima-soft, sans-serif;
+    color: #ffffff;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    width: 250px;
+    height: auto;
+    font-size: 16px; } }
 @media screen and (min-width: 1200px) {
   .headerboxmobile {
     display: none; }
@@ -222,6 +223,11 @@ h3 {
   .redwine, .whitewine, .rosewine, .portwine {
     grid-column: 2/5; }
 
+  h3 {
+    font-family: bookmania, serif;
+    color: #ffffff;
+    font-size: 130%; }
+
   .redhead {
     grid-row: 2/3;
     margin-left: -75px;
@@ -249,7 +255,7 @@ h3 {
   #redhide, #whitehide, #rosehide, #porthide {
     font-family: proxima-soft, sans-serif;
     color: #ffffff;
-    margin-left: 300px;
+    margin-left: 325px;
     margin-right: 200px;
     width: 600px;
     height: auto;

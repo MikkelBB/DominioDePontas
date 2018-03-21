@@ -62,9 +62,7 @@ h2 {
   color: white;
 }
 
-h3{
-  @include bookmania;
-}
+
 
 @media screen and (min-width: 375px) {
 
@@ -146,14 +144,22 @@ h3{
   }
 
   .redhead, .whitehead, .rosehead, .porthead{
-    @include bookmania;
+    font-family: bookmania, serif;
+    color: $white;
     margin: 30px;
-    font-size: 30px;
+    font-size: 28px !important;
   }
 
   #redhide, #whitehide, #rosehide, #porthide{
-    display: none;
+    @include proxima;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    width: 250px;
+    height: auto;
+    font-size: 16px;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -272,6 +278,10 @@ h3{
     margin-top: 20px;
   }
 
+  h3{
+    @include bookmania;
+  }
+
   .redhead{
     grid-row: 2/3;
   @include headline;
@@ -298,7 +308,7 @@ h3{
 
   #redhide, #whitehide, #rosehide, #porthide{
     @include proxima;
-    margin-left: 300px;
+    margin-left: 325px;
     margin-right: 200px;
     width: 600px;
     height: auto;
