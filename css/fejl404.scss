@@ -49,14 +49,14 @@ $white: #ffffff;
   margin-left: 35%;
   margin-top: -40%;
   color: white;
-  font-size: 300px;
+  font-size: 100px;
 }
 .text{
   position: absolute;
-  margin-left: 33%;
+  margin-left: 23%;
   margin-top: -20%;
   color: white;
-  font-size: 20px;
+  font-size: 11px;
   a{
     text-decoration: none;
     color: $red;
@@ -73,6 +73,29 @@ $white: #ffffff;
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  .img{
+    position: relative;
+  }
+  .text404{
+    position: absolute;
+    margin-left: 35%;
+    margin-top: -40%;
+    color: white;
+    font-size: 300px;
+  }
+  .text{
+    position: absolute;
+    margin-left: 33%;
+    margin-top: -20%;
+    color: white;
+    font-size: 20px;
+    a{
+      text-decoration: none;
+      color: $red;
+    }
+  }
+
+
 }
 
 @media print {
