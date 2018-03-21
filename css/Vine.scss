@@ -137,17 +137,11 @@ h3{
   }
   .grid{
     display: grid;
-
-  }
-
-  .grid{
-    display: grid;
   }
 
   img {
-    display: block; // Billeder er et element (laver linjeskift)
-    max-width: 100%; // Bredde må maks fylde 100%
-    // Højden skal tilpasse sig
+    display: block;
+    max-width: 100%;
     width: auto;
   }
 
@@ -342,40 +336,40 @@ h3{
   background: linear-gradient(to right, $black, $white);
   grid-column: 1/5;
   grid-row: 1/4;
-}
 
-.redhead{
-  grid-row: 1/2;
+  .redhead{
+    grid-row: 1/2;
+  }
 }
 
 .whitewine{
   background: linear-gradient(to right, $grey, $white);
   grid-column: 1/5;
   grid-row: 4/7;
-}
 
-.whitehead{
-  grid-row: 3/4;
+  .whitehead{
+    grid-row: 3/4;
+  }
 }
 
 .rosewine{
   background: linear-gradient(to right, $grey, $red);
   grid-column: 1/5;
   grid-row: 7/10;
-}
 
-.rosehead{
-  grid-row: 5/6;
+  .rosehead{
+    grid-row: 5/6;
+  }
 }
 
 .portwine{
   background: linear-gradient(to right, $black, $grey);
   grid-column: 1/5;
   grid-row: 10/13;
-}
 
-.porthead{
-  grid-row: 7/8;
+  .porthead{
+    grid-row: 7/8;
+  }
 }
 
 .redimg{
