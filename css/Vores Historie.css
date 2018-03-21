@@ -224,13 +224,13 @@ h2 {
   .boks1 {
     position: absolute;
     width: 700px;
-    height: 380px;
+    height: 245px;
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: 35%;
     margin-top: -36%;
     box-shadow: 5px 4px rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    padding: 40px;
+    padding: 35px;
     font-family: proxima-soft, sans-serif;
     color: #ffffff; }
 
@@ -240,13 +240,13 @@ h2 {
   .boks2 {
     position: absolute;
     width: 700px;
-    height: 380px;
+    height: 245px;
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: 35%;
     margin-top: -36%;
     box-shadow: 5px 4px rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    padding: 40px;
+    padding: 35px;
     font-family: proxima-soft, sans-serif;
     color: #ffffff; }
 
@@ -256,13 +256,13 @@ h2 {
   .boks3 {
     position: absolute;
     width: 700px;
-    height: 380px;
+    height: 240px;
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: 35%;
     margin-top: -36%;
     box-shadow: 5px 4px rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    padding: 40px;
+    padding: 35px;
     font-family: proxima-soft, sans-serif;
     color: #ffffff; }
 
