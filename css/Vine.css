@@ -260,7 +260,8 @@ h2 {
     margin-right: 200px;
     width: 600px;
     height: auto;
-    font-size: 24px; }
+    font-size: 24px;
+    display: none; }
 
   #myBtn {
     display: none;
@@ -310,6 +311,15 @@ h2 {
   grid-row: 10/13; }
   .portwine .porthead {
     grid-row: 7/8; }
+
+.redbutton, .hvidbutton, .rosebutton, .portbutton {
+  background-color: #b00030;
+  height: 50px;
+  width: 90px;
+  border: none; }
+  .redbutton a, .hvidbutton a, .rosebutton a, .portbutton a {
+    text-decoration: none;
+    color: #000000; }
 
 .redimg {
   grid-column: 4/5;
