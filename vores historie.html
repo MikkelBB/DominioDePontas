@@ -14,7 +14,7 @@
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
 
-    <meta name="robots" content="All">
+    <meta name="robots" content="noindex, nofollow">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
     <!-- Max ca. 170-200 karakterer - 600px -->
@@ -30,12 +30,13 @@
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
     <link href="css/Vores Historie.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="css/indyFadeBox.css">
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- script til fontawesome -->
     <script src="https://use.fontawesome.com/75970a48c3.js"></script>
+    <link rel="stylesheet" href="css/indyFadeBox.css">
 
 
 </head>
@@ -130,10 +131,12 @@
     <div class="image1">
         <img src="images/our history billede 1 resized 2.png"/>
     </div>
-    <div class="boks1">
-        <h1>Ansigterne bag virksomheden</h1><br><br>Bag Dominio de Pontas står vi, Thomas og Merete Flintholm. Vi boede oprindelig i København og havde karrierer som henholdsvis arkitekt og sygeplejerske, men var kørt trætte i hverdagen.
+    <div class="fade1">
+    <div class="indy-fade-box boks1">
+         <h1>Ansigterne bag virksomheden</h1><br><br>Bag Dominio de Pontas står vi, Thomas og Merete Flintholm. Vi boede oprindelig i København og havde karrierer som henholdsvis arkitekt og sygeplejerske, men var kørt trætte i hverdagen.
         Interessen for spansk vin og vinproduktion har altid været en stor del af vores liv, så derfor greb vi muligheden for at købe vores egen vingård da denne bød sig.
         Vi rykkede rødderne op og flyttede fra Danmark til Navarra i Spanien for sytten år siden.
+    </div>
     </div>
 </section>
 
@@ -158,7 +161,15 @@
     </div>
 </section>
 
-
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="jquery.indyFadeBox.js"></script>
+<script type="text/javascript">
+    $(document).ready(function (){
+        $(window).on('load', function() {
+            $('.fade1').indyFadeBox();
+        });
+    });
+</script>
 
 </body>
 </html>
