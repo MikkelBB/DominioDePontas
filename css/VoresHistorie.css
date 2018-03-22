@@ -118,7 +118,10 @@ h2 {
   .boks3 {
     padding: 20px;
     background: #000000;
-    color: #ffffff; } }
+    color: #ffffff; }
+    .boks3 a {
+      text-decoration: underline;
+      color: #b00030; } }
 @media screen and (min-width: 1200px) {
   .headerboxmobile {
     display: none; }
@@ -289,4 +292,4 @@ h2 {
   #myBtn:hover {
     background-color: #555; } }
 
-/*# sourceMappingURL=Vores%20Historie.css.map */
+/*# sourceMappingURL=VoresHistorie.css.map */

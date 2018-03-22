@@ -132,7 +132,7 @@ h2{
     background-color: $red;
     cursor: pointer;
   }
-  .boks1{
+  .boks1 {
     padding: 20px;
     background: $black;
     color: $white;
@@ -146,6 +146,10 @@ h2{
     padding: 20px;
     background: $black;
     color: $white;
+    a{
+      text-decoration: underline;
+      color: $red;
+    }
   }
 
 
