@@ -266,6 +266,9 @@ h2 {
     font-family: proxima-soft, sans-serif;
     color: #ffffff; }
 
+  a {
+    color: #b00030; }
+
   #myBtn {
     display: none;
     position: fixed;

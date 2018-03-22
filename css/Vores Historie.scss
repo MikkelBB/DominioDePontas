@@ -306,6 +306,9 @@ h2{
     padding: 35px;
     @include proxima;
   }
+  a{
+    color: #b00030;
+  }
   //TOP KNAP
   #myBtn {
     display: none;
