@@ -265,6 +265,9 @@ h2 {
     padding: 35px;
     font-family: proxima-soft, sans-serif;
     color: #ffffff; }
+    .boks3 a {
+      text-decoration: underline;
+      color: #b00030; }
 
   a {
     color: #b00030; }

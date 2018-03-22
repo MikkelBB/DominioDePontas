@@ -305,6 +305,10 @@ h2{
     color: $white;
     padding: 35px;
     @include proxima;
+    a{
+      text-decoration: underline;
+      color: $red;
+    }
   }
   a{
     color: #b00030;
